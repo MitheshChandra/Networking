@@ -1,0 +1,7 @@
+Backend Servers & Reverse-Proxy: Think about how you'll structure your Docker Compose file (or Vagrant if you decide on that). For the reverse proxy (using Nginx, for example), look into its basic round-robin configuration. Ask yourself:
+
+How will you define the network so that all containers can talk to each other?
+
+How will you map internal ports to external ones?
+
+Action Tip: Start small—spin up one backend server and get a simple HTTP request flowing through your reverse-proxy, then scale that setup to include all required backend servers.
